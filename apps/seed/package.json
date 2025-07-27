@@ -1,0 +1,27 @@
+{
+  "name": "@repo/seed",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "ts:check": "tsc --noEmit",
+    "seed": "cross-env TZ=UTC ts-node src/main.ts"
+  },
+  "dependencies": {
+    "@repo/db": "workspace:*",
+    "@repo/db-impl": "workspace:*",
+    "@repo/entities": "workspace:*",
+    "@repo/uuid": "workspace:*",
+    "@repo/uuid-impl": "workspace:*",
+    "@repo/date-converter-impl": "workspace:*"
+  },
+  "devDependencies": {
+    "@fast-csv/parse": "^5.0.0",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^20.11.24",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

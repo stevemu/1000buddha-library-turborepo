@@ -1,0 +1,19 @@
+{
+  "name": "@repo/db",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./Db": "./src/Db.ts"
+  },
+  "scripts": {
+    "ts:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@repo/entities": "workspace:*"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "^5.3.3"
+  }
+}

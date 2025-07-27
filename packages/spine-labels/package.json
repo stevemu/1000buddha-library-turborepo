@@ -1,0 +1,24 @@
+{
+  "name": "@repo/spine-labels",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./GenerateSpineLabels": "./src/GenerateSpineLabels.ts",
+    "./SpineLabelsPdfRenderer": "./src/SpineLabelsPdfRenderer.ts"
+  },
+  "scripts": {
+    "ts:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@repo/db": "workspace:*",
+    "@repo/entities": "workspace:*",
+    "@repo/binary-to-base64": "workspace:*",
+    "@repo/pdf-renderer": "workspace:*"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "^5.3.3",
+    "@types/node": "^20.11.24"
+  }
+}

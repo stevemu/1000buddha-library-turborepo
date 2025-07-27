@@ -1,0 +1,21 @@
+{
+  "name": "@repo/barcode-generator-impl",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./BarcodeGeneratorImpl": "./src/BarcodeGeneratorImpl.ts"
+  },
+  "scripts": {
+    "ts:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@repo/barcode-generator": "workspace:*",
+    "bwip-js": "^4.5.1"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "^5.3.3",
+    "@types/bwip-js": "^3.2.3"
+  }
+}

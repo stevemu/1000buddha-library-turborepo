@@ -1,0 +1,20 @@
+{
+  "name": "@repo/date-converter-impl",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./ISOToDateConverterImpl": "./src/ISOToDateConverterImpl.ts"
+  },
+  "scripts": {
+    "ts:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@repo/date-converter": "workspace:*",
+    "@repo/date-util": "workspace:*"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "^5.3.3"
+  }
+}

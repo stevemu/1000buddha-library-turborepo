@@ -1,0 +1,20 @@
+{
+  "name": "@repo/form",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./rhf": "./src/rhf.ts"
+  },
+  "scripts": {
+    "lint": "eslint . --max-warnings 0",
+    "ts:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react-hook-form": "7.51.5"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": [
+    "**/.env.*local",
+    ".env"
+  ],
+  "globalEnv": [
+    "NODE_ENV",
+    "POSTGRES_URL",
+    "NEXT_PUBLIC_DATADOG_CLIENT_TOKEN",
+    "NEXT_PUBLIC_DATADOG_ENV"
+  ],
+  "tasks": {
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**"
+      ]
+    },
+    "lint": {
+      "dependsOn": [
+        "^lint"
+      ]
+    },
+    "ts:check": {
+      "dependsOn": [
+        "^ts:check"
+      ]
+    },
+    "test": {
+      "dependsOn": [
+        "^test"
+      ]
+    }
+  }
+}

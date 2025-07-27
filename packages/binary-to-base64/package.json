@@ -1,0 +1,17 @@
+{
+  "name": "@repo/binary-to-base64",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./BinaryToBase64Converter": "./src/BinaryToBase64Converter.ts"
+  },
+  "scripts": {
+    "ts:check": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@repo/generate-barcode-labels",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./BarcodeLabelPdfRenderer": "./src/BarcodeLabelPdfRenderer.ts",
+    "./GenerateBarcodeLabels": "./src/GenerateBarcodeLabels.ts"
+  },
+  "scripts": {
+    "ts:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@repo/pdf-renderer": "workspace:*",
+    "@repo/binary-to-base64": "workspace:*",
+    "@repo/db": "workspace:*",
+    "@repo/entities": "workspace:*",
+    "@repo/barcode-generator": "workspace:*"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "^5.3.3"
+  }
+}

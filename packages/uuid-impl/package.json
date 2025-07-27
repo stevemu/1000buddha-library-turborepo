@@ -1,0 +1,21 @@
+{
+  "name": "@repo/uuid-impl",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./UUIDGeneratorImpl": "./src/UUIDGeneratorImpl.ts"
+  },
+  "scripts": {
+    "ts:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@repo/uuid": "workspace:*",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "^5.3.3",
+    "@types/uuid": "^10.0.0"
+  }
+}

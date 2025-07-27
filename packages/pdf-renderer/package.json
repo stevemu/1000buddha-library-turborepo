@@ -1,0 +1,24 @@
+{
+  "name": "@repo/pdf-renderer",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./PdfRenderer": "./src/PdfRenderer.ts",
+    "./Avery5160PdfRenderer": "./src/Avery5160PdfRenderer.ts",
+    "./EmptyPdfFileReader": "./src/EmptyPdfFileReader.ts",
+    "./ChineseFontFileReader": "./src/ChineseFontFileReader.ts"
+  },
+  "scripts": {
+    "ts:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@pdf-lib/fontkit": "^1.1.1",
+    "pdf-lib": "^1.17.1"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "^5.3.3",
+    "@types/node": "^20.11.24"
+  }
+}

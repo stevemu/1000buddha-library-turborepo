@@ -1,0 +1,23 @@
+{
+  "name": "@repo/csv",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./GenerateBooksCsv": "./src/GenerateBooksCsv.ts",
+    "./CsvGenerator": "./src/CsvGenerator.ts",
+    "./CsvGeneratorImpl": "./src/CsvGeneratorImpl.ts"
+  },
+  "scripts": {
+    "ts:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fast-csv/format": "^5.0.0",
+    "@repo/db": "workspace:*",
+    "@repo/entities": "workspace:*"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "^5.3.3"
+  }
+}

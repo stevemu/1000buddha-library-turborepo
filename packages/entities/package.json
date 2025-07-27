@@ -1,0 +1,19 @@
+{
+  "name": "@repo/entities",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./Book": "./src/Book.ts"
+  },
+  "scripts": {
+    "ts:check": "tsc --noEmit"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "^5.3.3"
+  }
+}

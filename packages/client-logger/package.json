@@ -1,0 +1,21 @@
+{
+  "name": "@repo/client-logger",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./init": "./src/init.ts",
+    "./log": "./src/log.ts"
+  },
+  "scripts": {
+    "ts:check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@datadog/browser-logs": "^5.28.1",
+    "@datadog/browser-rum": "^5.28.1"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@repo/book",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    "./AddBook": "./src/AddBook.ts",
+    "./GetBook": "./src/GetBook.ts",
+    "./DeleteBooks": "./src/DeleteBooks.ts",
+    "./UpdateBook": "./src/UpdateBook.ts",
+    "./SearchBooks": "./src/SearchBooks.ts",
+    "./BookResponse": "./src/BookResponse.ts",
+    "./ResponseConverter": "./src/ResponseConverter.ts",
+    "./ResponseConverterImpl": "./src/ResponseConverterImpl.ts",
+    "./GenerateNextBarcode": "./src/GenerateNextBarcode/GenerateNextBarcode.ts"
+  },
+  "scripts": {
+    "ts:check": "tsc --noEmit",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@repo/entities": "workspace:*",
+    "@repo/db": "workspace:*",
+    "@repo/uuid": "workspace:*",
+    "@repo/date-converter": "workspace:*"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "^5.3.3",
+    "@repo/jest-config": "workspace:*"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "1000buddha-library",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "ts:check": "turbo ts:check",
+    "dev:tools": "pnpm -F library-tools dev",
+    "test": "turbo test",
+    "deploy:prod": "curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_5ycKUTZ5UT6f0m8bdCLU2G6Bjhis/K6oRFqvxWn",
+    "deploy:dev": "curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_5ycKUTZ5UT6f0m8bdCLU2G6Bjhis/dqKsmV82t3"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.4",
+    "turbo": "2.2.3"
+  },
+  "packageManager": "pnpm@9.12.2",
+  "engines": {
+    "node": ">=20"
+  }
+}
