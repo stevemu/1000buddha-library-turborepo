@@ -2,6 +2,8 @@
 
 Tools for adding new books to the 千佛寺圖書館 Thousand Buddha Temple library.
 
+![Homepage Screenshot](https://8octlbsl6slpnmsz.public.blob.vercel-storage.com/homepage.png)
+
 # development
 
 ## start the dev server
